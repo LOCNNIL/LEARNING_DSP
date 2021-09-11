@@ -3,6 +3,8 @@
 
 >Repository to Store Digital Signal Process (DSP) codes and techniques
 
+This project was created to store some techniques and algorithms to solve Digital Signal Processing problems.
+
 ## Instalation:
 The mainly requirements are the knowledge in MATLAB or Python programming techniques.
 
