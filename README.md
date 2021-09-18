@@ -7,6 +7,7 @@ This project was created to store some techniques and algorithms to solve Digita
 
 ## Instalation:
 The mainly requirements are the knowledge in MATLAB or Python programming techniques.
+Inside the folders you gonna find some MATLAB scripts (.m file extensions and also some Jupyter notebooks)
 
 
 ## Authors:

@@ -10,7 +10,6 @@
 load glassDance.mat
 % this is a clip of Philip Glass, Dance VII (https://www.youtube.com/watch?v=LpewOlR-z_4)
 
-
 % play the music!
 soundsc(glassclip,srate)
 
@@ -36,12 +35,10 @@ plot(hz,powr(1:length(hz)))
 set(gca,'xlim',[100 2000],'ylim',[0 max(powr)])
 xlabel('Frequency (Hz)'), ylabel('Amplitude')
 
-
-% pick frequencies to filter
+% pick frequencies to filter (trying different kind of frequencies)
 frange = [  300  460 ];
 frange = [ 1000 1100 ];
 % frange = [ 1200 1450 ];
-
 
 % design an FIR1 filter
 fkern = fir1(2001,frange/(srate/2),'bandpass');
@@ -54,7 +51,6 @@ filtglass(:,2) = filtfilt(fkern,1,glassclip(:,2));
 hold on
 powr = abs(fft(filtglass(:,1))/pnts);
 plot(hz,powr(1:length(hz)),'r')
-
 
 % plot the time-frequency response
 subplot(5,1,3:5)
